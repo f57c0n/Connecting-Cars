@@ -41,12 +41,12 @@ abstract public class Vehicle
     @param w the width of the bounding box
     @param h the height of the bounding box
   */
-   	public Vehicle(int x, int y, int w, int h)
+   public Vehicle(int x, int y, int w, int h)
     {
-   		xLeft = x ; 
-   		yTop = y ; 
-   		width = w ; 
-   		height = h ;
+   	xLeft = x ; 
+   	yTop = y ; 
+   	width = w ; 
+   	height = h ;
     	boundingBox = new Rectangle(xLeft, yTop, width, height) ;
     }
    	
@@ -55,11 +55,11 @@ abstract public class Vehicle
     @param newX the new x-coordinate
     @param newY the new y-coordinate
   */
-   	public void setXY(int newX, int newY) 
+   public void setXY(int newX, int newY) 
     {
-   		xLeft = newX ;
-   		yTop = newY ;
-   		boundingBox = new Rectangle(xLeft, yTop, width, height) ;
+   	xLeft = newX ;
+   	yTop = newY ;
+   	boundingBox = new Rectangle(xLeft, yTop, width, height) ;
     }
     
    	/**
