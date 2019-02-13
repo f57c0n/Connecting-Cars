@@ -1,6 +1,6 @@
 /**
-	Name:	Dexter Falcon
-	Student ID:	009 055 534
+	Name:	Falcon
+	Student ID:	
 	CPS 209 Assignment 2
    
    	NOTE:
@@ -16,8 +16,6 @@
 import java.awt.* ;
 import java.awt.geom.* ;
 
-
-
 public class Container extends Vehicle
 {
 	final int ContainerWIDTH=30;
@@ -25,20 +23,28 @@ public class Container extends Vehicle
     private Rectangle2D.Double Container;
     private String letter="";
 
-    private static Container belowContainer;			//use for drawing purposes only
+    //use for drawing purposes only
+    private static Container belowContainer;			
 
     public Container(int x, int y, int w, int h)
     {
     	super(x,y,w,h);  
     }
 
-    public Rectangle2D.Double returnContainer()			{return Container;}
+    public Rectangle2D.Double returnContainer()			
+    	{return Container;}
     
-    public void setLetter(String s)						{this.letter = s;}
-    public  String getLetter()							{return letter;}
+    public void setLetter(String s)						
+    	{this.letter = s;}
+	
+    public  String getLetter()							
+    	{return letter;}
  
-    public static void setBelow(Container b)			{belowContainer = b;}
-    public static Container returnBelow(Container b)	{return belowContainer;}
+    public static void setBelow(Container b)			
+    	{belowContainer = b;}
+	
+    public static Container returnBelow(Container b)	
+    	{return belowContainer;}
     
     public void draw(Graphics2D g2)
     {
