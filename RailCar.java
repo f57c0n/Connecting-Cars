@@ -25,8 +25,11 @@ public class RailCar extends Vehicle
         super(x,y,w,h);
     }
     
-    public void setNumber(int number)  		{ this.number = number; }
-    int getNumber()							{ return number; }
+    public void setNumber(int number)  		
+      { this.number = number; }
+      
+    int getNumber()							
+      { return number; }
 
     
     /**
