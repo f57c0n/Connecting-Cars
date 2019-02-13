@@ -1,6 +1,6 @@
 /**
-	Name:	Dexter Falcon
-	Student ID:	009 055 534
+	Name:	Falcon
+	Student ID:	
 	CPS 209 Assignment 2
    
    	NOTE:
@@ -52,8 +52,8 @@ public class TrailerComponent extends JComponent
     	 {
     		 public void mousePressed(MouseEvent event)
     		 {
-    			 int x = event.getX();
-				 int y = event.getY();
+    			int x = event.getX();
+			int y = event.getY();
     			 
     			 //creating train engine
     			 if(itemCounter == 0)
@@ -220,8 +220,8 @@ public class TrailerComponent extends JComponent
     		//traverse till the last rail car
     		while(tempPointer.hasTrailer())
     		{
-              tempPointer = tempPointer.nextCar();
-            } 
+              		tempPointer = tempPointer.nextCar();
+            	} 
         }
       
         tempPointer.linkSelectedCar((RailCar)selected);
@@ -396,8 +396,10 @@ public class TrailerComponent extends JComponent
         
         for(int i =0;i<vehicleList.size();i++)
 		{              
-			if(selected == vehicleList.get(i))					{g2.setColor(Color.MAGENTA);}
-			if(vehicleList.get(i).checkIfTrailer() == false)	{vehicleList.get(i).draw(g2);} 
+			if(selected == vehicleList.get(i))					
+				{g2.setColor(Color.MAGENTA);}
+			if(vehicleList.get(i).checkIfTrailer() == false)	
+				{vehicleList.get(i).draw(g2);} 
 			g2.setColor(Color.BLUE);
 		}
 
