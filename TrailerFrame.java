@@ -1,6 +1,6 @@
 /**
-	Name:	Dexter Falcon
-	Student ID:	009 055 534
+	Name:	Falcon
+	Student ID:	
 	CPS 209 Assignment 2
    
    	NOTE:
