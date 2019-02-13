@@ -1,6 +1,6 @@
 /**
-	Name:	Dexter Falcon
-	Student ID:	009 055 534
+	Name:	Falcon
+	Student ID:	
 	CPS 209 Assignment 2
    
    	NOTE:
@@ -25,9 +25,9 @@ import java.awt.Graphics2D ;
 abstract public class Vehicle 
 {
     private int xLeft, yTop ; 				//top left corner of bounding box
-    private int width ; 					//the width of the bounding box
-    private int height ; 					//the height of the bounding box
-    private Rectangle boundingBox ; 		//the bounding box
+    private int width ; 				//the width of the bounding box
+    private int height ; 				//the height of the bounding box
+    private Rectangle boundingBox ; 			//the bounding box
     
     private RailCar nextCarPointer;			//the pointer to attached rail car.
     boolean isTrailer = false;
@@ -84,10 +84,17 @@ abstract public class Vehicle
         yTop = y;
     }
     
-    public int getX() 								{ return xLeft ; }
-    public int getY() 								{ return yTop ; }
-    public int getWidth() 							{ return width ; }
-    public int getHeight() 							{ return height ; }
+    public int getX() 								
+    	{ return xLeft ; }
+	
+    public int getY() 								
+    	{ return yTop ; }
+	
+    public int getWidth() 							
+    	{ return width ; }
+	
+    public int getHeight() 							
+    	{ return height ; }
     
     public void setTrailerStatus(boolean yesno)
     {
@@ -95,10 +102,17 @@ abstract public class Vehicle
     }
    
     //methods to create a trailer
-    public RailCar nextCar()						{ return nextCarPointer; }
-    public void setNextCarPointer(RailCar railcar)	{ nextCarPointer = railcar; }
-    public boolean hasTrailer()						{ return (nextCarPointer!=null); }
-    public boolean checkIfTrailer()					{ return isTrailer; }
+    public RailCar nextCar()						
+    	{ return nextCarPointer; }
+	
+    public void setNextCarPointer(RailCar railcar)	
+    	{ nextCarPointer = railcar; }
+	
+    public boolean hasTrailer()						
+    	{ return (nextCarPointer!=null); }
+	
+    public boolean checkIfTrailer()					
+    	{ return isTrailer; }
    
     public void linkSelectedCar(RailCar selected)
     {
@@ -107,10 +121,17 @@ abstract public class Vehicle
     }
     
     //methods to carry the containers
-    public void setAbove(Container a)				{ aboveContainer = a; }
-    public void addAbove(Container b)				{ setAbove(b); }
-    public boolean hasAbove()						{ return (aboveContainer !=null); }
-    public Container returnAbove()					{ return aboveContainer ; }
+    public void setAbove(Container a)				
+    	{ aboveContainer = a; }
+	
+    public void addAbove(Container b)				
+    	{ setAbove(b); }
+	
+    public boolean hasAbove()						
+    	{ return (aboveContainer !=null); }
+	
+    public Container returnAbove()					
+    	{ return aboveContainer ; }
    
     /**
        Checks if the x, y position is inside the bounding box
